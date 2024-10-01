@@ -1,6 +1,6 @@
 format = (".com",".ru",".net")
 
-def send_email(massage, recipient, sender = 'university.help@gmail.com'):
+def send_email(massage, recipient, *, sender = 'university.help@gmail.com'):
     if '@' not in recipient and sender:
         print("Невозможно отправить письмо с адреса",sender, "на адрес", recipient)
     elif  not recipient.endswith(format)  or not sender.endswith(format):
