@@ -8,4 +8,5 @@ def get_multiplied_digits(number):
 
 print(get_multiplied_digits(40203))
 print('------')
-print(get_multiplied_digits(10203040506070809))
+print(get_multiplied_digits(4201))
+print(get_multiplied_digits(7))
