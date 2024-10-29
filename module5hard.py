@@ -1,5 +1,4 @@
 from time import sleep
-from webbrowser import register
 
 
 class User:
@@ -49,11 +48,6 @@ class UrTube:
                 break
             else:
                 continue
-            # elif i.nickname != nickname:
-            #     UrTube.current_user = None
-            #     print(f'Пользователь {nickname}, не найден')
-            # elif i.password != hash(password):
-            #     print("Не верный пароль")
 
     def log_out(self, nickname):
         self.nickname = nickname
@@ -100,7 +94,7 @@ class UrTube:
 
 ur = UrTube()
 v1 = Video('Лучший язык программирования 2024 года', 200)
-v2 = Video('Для чего девушкам парень программист?', 1, adult_mode=True)
+v2 = Video('Для чего девушкам парень программист?', 10, adult_mode=True)
 
 # Добавление видео
 ur.add(v1, v2)
